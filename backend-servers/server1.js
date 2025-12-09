@@ -5,7 +5,6 @@ const SERVER_NAME = "Server-1";
 
 app.use(express.json());
 
-// Artificial delay to simulate processing
 const delay = () => new Promise((resolve) => setTimeout(resolve, 200));
 
 app.get("/data", async (req, res) => {
