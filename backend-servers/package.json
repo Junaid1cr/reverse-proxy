@@ -1,0 +1,18 @@
+{
+  "name": "backend-servers",
+  "version": "1.0.0",
+  "description": "Backend servers for load balancing demo",
+  "scripts": {
+    "server1": "node server1.js",
+    "server2": "node server2.js",
+    "server3": "node server3.js",
+    "server4": "node server4.js",
+    "start": "concurrently \"npm run server1\" \"npm run server2\" \"npm run server3\" \"npm run server4\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
